@@ -374,7 +374,7 @@ function createColorScale() {
 
 async function loadDataset() {
   var columnData = getColumnData();
-  var freedomData = await d3.csv("https://kvamsid.github.io/AxiSketcher.github.io/data/freedom_index.csv", function (d) {
+  var freedomData = await d3.csv("https://github.com/kvamsid/AxiSketcher.github.io/tree/main/data/freedom_index.csv", function (d) {
     var modifiedData = {};
     Object.entries(columnData).forEach(([key, value]) => {
       if (value.numerical) {
